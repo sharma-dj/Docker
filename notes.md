@@ -53,7 +53,7 @@ docker run -d --name <custom_name> <image_name>
 
 # 12) How to access container's terminal?
 docker exec -it <container_id>/<container_name> /bin/bash(sh)
-docker exce -it my_container /bin/bash
+docker exec -it my_container /bin/bash
 
 # 13) What is docker network?
 Docker networking enables a user to link a Docker container to as many networks as he/she requires. Docker Networks are used to provide complete isolation for Docker containers.
