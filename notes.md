@@ -165,6 +165,9 @@ volumes:
 Docker Daemon: The daemon (dockerd) is a process that keeps running in the background and waits for commands from the client. The daemon is capable of managing various Docker objects.
 Docker Client: The client  (docker) is a command-line interface program mostly responsible for transporting commands issued by users.
 REST API: The REST API acts as a bridge between the daemon and the client. Any command issued using the client passes through the API to finally reach the daemon.
+	
+# Use multi-stage builds
+With multi-stage builds, you use multiple FROM statements in your Dockerfile. Each FROM instruction can use a different base, and each of them begins a new stage of the build. You can selectively copy artifacts from one stage to another, leaving behind everything you don’t want in the final image. To show how this works, let’s adapt the Dockerfile from the previous section to use multi-stage builds.
 
 # References links
 https://www.freecodecamp.org/news/the-docker-handbook/
