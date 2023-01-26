@@ -183,7 +183,7 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=0 /go/src/github.com/alexellis/href-counter/app ./
 CMD ["./app"]
-```
+````
 
 # References links
 https://www.freecodecamp.org/news/the-docker-handbook/
