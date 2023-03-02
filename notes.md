@@ -38,6 +38,7 @@ docker run <image_nmae>:(version) => It will first check into our system for the
 docker run <image_name>
 docker run -d <image_name> : This command runs the container in detached mode. In this mode, we can use the terminal for any other operation without stopping the container.
 docker run -p<host_port>:<container_port> <image_name> : Using this command, we are running the image by binding the host machine port with container's default port in order to avoid port conflict.
+
 docker run -p7007:3600 mysql
 
 # 9) How to start and stop docker container?
